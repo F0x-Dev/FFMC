@@ -24,6 +24,8 @@ FFMC is a video conversion tool built for efficient batch transcoding of video l
 - [Contributing](#contributing)
 - [Roadmap](#roadmap)
 - [License](#license)
+- [Support](#support)
+- [Donations](#donations)
 
 ---
 
@@ -861,6 +863,7 @@ If using FFMC in research or production, please cite:
   url = {https://github.com/F0x-Dev/FFMCc}
 }
 ```
+
 
 
 
