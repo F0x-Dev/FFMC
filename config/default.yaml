@@ -1,0 +1,61 @@
+# config/default.yaml
+# FFMC Default Configuration
+
+# Target codecs
+target_video_codec: hevc
+target_audio_codec: aac
+
+# Video quality settings
+video_quality:
+  crf: 23                    # Constant Rate Factor (0-51, lower = better quality)
+  preset: medium             # Encoding speed preset
+  tune: film                 # Tuning for specific content type
+
+# Audio quality settings
+audio_quality:
+  bitrate: 192k              # Audio bitrate
+  codec: aac                 # Audio codec
+
+# Performance settings
+concurrent_conversions: 2    # Number of simultaneous conversions
+cpu_affinity: true           # Enable CPU core affinity for workers
+
+# Behavior settings
+skip_if_larger: true         # Skip conversion if output would be larger
+create_backup: false         # Keep original file as .bak
+output_suffix: ""            # Suffix for converted files (empty = replace original)
+output_directory: null       # Custom output directory (null = same as input)
+
+# Supported file extensions
+extensions:
+  - avi
+  - mp4
+  - mkv
+  - mov
+  - wmv
+  - flv
+  - webm
+  - m4v
+  - mpg
+  - mpeg
+  - 3gp
+  - ogv
+  - ts
+  - vob
+
+# Hardware acceleration
+hardware_acceleration:
+  enabled: false             # Enable GPU acceleration
+  type: nvidia               # Hardware type: nvidia, amd, intel, videotoolbox
+  encoder: hevc_nvenc        # Hardware encoder
+
+# FFmpeg paths
+ffmpeg_path: ffmpeg          # Path to ffmpeg binary
+ffprobe_path: ffprobe        # Path to ffprobe binary
+
+# Notifications
+webhook_url: null            # Webhook URL for notifications (Discord, Slack, etc.)
+
+# Database and state
+database_path: data/conversions.db
+state_file: data/state.pkl

@@ -1,0 +1,89 @@
+# config/profiles.yaml
+# Predefined conversion profiles for different use cases
+
+# Fast encoding - prioritizes speed over quality/size
+fast:
+  video_quality:
+    crf: 28
+    preset: veryfast
+    tune: fastdecode
+  concurrent_conversions: 4
+  skip_if_larger: true
+
+# Balanced - good quality and reasonable speed (default)
+balanced:
+  video_quality:
+    crf: 23
+    preset: medium
+    tune: film
+  audio_quality:
+    bitrate: 192k
+  concurrent_conversions: 2
+  skip_if_larger: true
+
+# High quality - best visual quality, slower encoding
+quality:
+  video_quality:
+    crf: 18
+    preset: slow
+    tune: film
+  audio_quality:
+    bitrate: 256k
+  concurrent_conversions: 1
+  skip_if_larger: false
+
+# Archive - maximum compression for long-term storage
+archive:
+  video_quality:
+    crf: 20
+    preset: veryslow
+    tune: film
+  audio_quality:
+    bitrate: 256k
+  concurrent_conversions: 1
+  skip_if_larger: false
+  create_backup: true
+
+# GPU accelerated - for systems with NVIDIA GPU
+gpu_nvidia:
+  hardware_acceleration:
+    enabled: true
+    type: nvidia
+    encoder: hevc_nvenc
+  concurrent_conversions: 4
+  skip_if_larger: true
+
+# GPU accelerated - for systems with AMD GPU
+gpu_amd:
+  hardware_acceleration:
+    enabled: true
+    type: amd
+    encoder: hevc_amf
+  concurrent_conversions: 4
+  skip_if_larger: true
+
+# GPU accelerated - for systems with Intel iGPU
+gpu_intel:
+  hardware_acceleration:
+    enabled: true
+    type: intel
+    encoder: hevc_qsv
+  concurrent_conversions: 4
+  skip_if_larger: true
+
+# GPU accelerated - for macOS with VideoToolbox
+gpu_mac:
+  hardware_acceleration:
+    enabled: true
+    type: videotoolbox
+    encoder: hevc_videotoolbox
+  concurrent_conversions: 3
+  skip_if_larger: true
+
+# Network optimized - for videos on network storage
+network:
+  video_quality:
+    crf: 25
+    preset: fast
+  concurrent_conversions: 1
+  skip_if_larger: true

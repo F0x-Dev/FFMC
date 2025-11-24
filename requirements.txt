@@ -1,0 +1,9 @@
+# Core dependencies
+psutil>=5.9.0
+pyyaml>=6.0
+
+# Progress display (optional but recommended)
+rich>=13.0.0
+
+# Notifications (optional)
+aiohttp>=3.9.0

@@ -1,0 +1,24 @@
+{
+  "target_video_codec": "hevc",
+  "target_audio_codec": "aac",
+  "video_quality": {
+    "crf": 23,
+    "preset": "medium",
+    "tune": "film"
+  },
+  "audio_quality": {
+    "bitrate": "192k"
+  },
+  "concurrent_conversions": 2,
+  "skip_if_smaller": true,
+  "create_backup": false,
+  "output_suffix": "",
+  "extensions": ["avi", "mp4", "mkv", "mov", "wmv", "flv", "webm", "m4v", "mpg", "mpeg", "3gp", "ogv", "ts", "vob"],
+  "ffmpeg_path": "ffmpeg",
+  "ffprobe_path": "ffprobe",
+  "hardware_acceleration": {
+    "enabled": false,
+    "type": "nvidia",
+    "encoder": "hevc_nvenc"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "fast": {
+    "video_quality": {"crf": 28, "preset": "veryfast"},
+    "concurrent_conversions": 4
+  },
+  "balanced": {
+    "video_quality": {"crf": 23, "preset": "medium"},
+    "concurrent_conversions": 2
+  },
+  "quality": {
+    "video_quality": {"crf": 18, "preset": "slow"},
+    "concurrent_conversions": 1
+  },
+  "archive": {
+    "video_quality": {"crf": 20, "preset": "veryslow"},
+    "audio_quality": {"bitrate": "256k"},
+    "concurrent_conversions": 1
+  }
+}
