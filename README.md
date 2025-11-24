@@ -810,10 +810,43 @@ SOFTWARE.
 
 ## Support
 
+FFMC is free and open-source. Support continued development:
+
 - **Issues**: Report bugs via [GitHub Issues](https://github.com/F0x-Dev/FFMC/issues)
 - **Documentation**: See [docs/](docs/) directory
 - **Contact**: For security issues, contact maintainers directly
 
+### Donations
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://www.buymeacoffee.com/F0x.Dev">
+        <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50">
+      </a>
+      <br>
+      <sub><b>Buy Me a Coffee</b></sub>
+    </td>
+    <td align="center">
+      <img src="https://img.shields.io/badge/XMR-Monero-FF6600?style=for-the-badge&logo=monero&logoColor=white">
+      <br>
+      <sub><b>Cryptocurrency</b></sub>
+    </td>
+  </tr>
+</table>
+<details>
+<summary>Cryptocurrency Addresses</summary>
+
+**Monero (XMR):**
+```
+86YTvf4UBeYXYbjHkbhHqEHDCdVNEQUu6eJb6FNuEGe2CKmqTgvgeTnLRfe3MkUyQVHxsiUjFvWEyh58Tf4UnZ9L4HcwZ5A
+```
+</details>
+### Other Ways to Contribute
+- Star this repository
+- Report issues
+- Submit pull requests
+- Share with others
 ---
 
 ## Citation
@@ -828,6 +861,7 @@ If using FFMC in research or production, please cite:
   url = {https://github.com/F0x-Dev/FFMCc}
 }
 ```
+
 
 
 
